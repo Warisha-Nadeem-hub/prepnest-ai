@@ -13,7 +13,7 @@ void main() async {
   // Initialize offline caching (Hive)
   await StorageService.init();
 
-  await StorageService.setOnboarded(false);
+  //await StorageService.setOnboarded(false);
 
   // Initialize local study reminders notifications
   await NotificationService.init();

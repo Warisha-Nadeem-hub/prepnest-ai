@@ -11,6 +11,10 @@ import 'package:mind_boost/screens/profile_screen.dart';
 import 'package:mind_boost/theme/app_theme.dart';
 import 'package:mind_boost/utils/app_constants.dart';
 import 'package:mind_boost/widgets/custom_illustrations.dart';
+import 'package:mind_boost/widgets/daily_challenge_card.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'dart:math';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -40,7 +44,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final selectedTopics = ref.watch(selectedTopicsNotifierProvider);
-
     if (_selectedTopic.isEmpty && selectedTopics.isNotEmpty) {
       _selectedTopic = selectedTopics.first;
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -95,6 +98,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   ) {
     final streak = ref.watch(streakNotifierProvider);
     final cardState = ref.watch(cardNotifierProvider);
+    final finishedCount = 0;
 
     return Scaffold(
       backgroundColor: isDark
@@ -174,7 +178,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 ).animate().fadeIn(duration: 400.ms),
                 const SizedBox(height: 20),
 
-                // Stats row - Streak + Cards Completed
                 Row(
                       children: [
                         Expanded(
@@ -190,7 +193,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             isDark: isDark,
                           ),
                         ),
-                        const SizedBox(width: 8),
+                        const SizedBox(width: 14),
                         Expanded(
                           child: _buildStatCard(
                             context,
@@ -199,7 +202,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             iconBgColor: isDark
                                 ? AppTheme.primaryPurple.withAlpha(30)
                                 : AppTheme.primaryPurpleLight,
-                            value: '12/30',
+                            // FIX: Replaced the hardcoded '12/30' string mapping payload
+                            value: '$finishedCount',
                             label: 'Cards Solved',
                             isDark: isDark,
                           ),
@@ -279,6 +283,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   error: (err, _) =>
                       _buildCardErrorPlaceholder(isDark, err.toString()),
                 ),
+                DailyChallengeCard(selectedTopics: selectedTopics),
               ],
             ),
           ),

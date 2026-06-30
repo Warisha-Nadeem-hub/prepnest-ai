@@ -1,0 +1,325 @@
+[
+  {
+    "id": "challenge_001",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What is the time complexity to insert a new element at the beginning of a singly linked list versus an array?",
+    "answer": "O(1) for a linked list, because you only change the head pointer reference. O(n) for an array, because all existing elements must be shifted one index to the right in memory."
+  },
+  {
+    "id": "challenge_002",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "Explain the concept of 'Two Pointers' technique and when it is ideally applied.",
+    "answer": "It uses two reference pointers iterating through an array or linked list concurrently (either opposite ends moving inwards, or same end moving at different speeds). It optimizes search space from O(n²) to O(n), commonly used for sorted arrays, palindrome checks, or finding a cycle."
+  },
+  {
+    "id": "challenge_003",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "What is the primary difference between horizontal scaling (scaling out) and vertical scaling (scaling up)?",
+    "answer": "Horizontal scaling involves adding more machines or server instances to your cluster resource pool. Vertical scaling means adding more computing hardware power (CPU, RAM) to an existing single server instance."
+  },
+  {
+    "id": "challenge_004",
+    "topic": "Databases",
+    "difficulty": "Easy",
+    "question": "What are ACID properties in relational database transactions?",
+    "answer": "Atomicity (all operations succeed or all fail), Consistency (data changes follow schema rules), Isolation (concurrent transactions don't affect each other), and Durability (saved commits survive system failures)."
+  },
+  {
+    "id": "challenge_005",
+    "topic": "Flutter & Dart",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Hot Reload and a Hot Restart during development?",
+    "answer": "Hot Reload injects updated source code files into the Dart VM, preserving the current application state. Hot Restart destroys the current state tree, re-initializes the application variables, and rebuilds the widget widget tree."
+  },
+  {
+    "id": "challenge_006",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "Why does a Hash Table achieve an O(1) average time complexity for search operations?",
+    "answer": "It passes the search key through a hash function that generates a direct numerical index array offset. The engine can then look up or jump straight to the exact index memory address without traversing any other elements."
+  },
+  {
+    "id": "challenge_007",
+    "topic": "Algorithms",
+    "difficulty": "Hard",
+    "question": "How does Dynamic Programming (DP) differ from a standard Divide-and-Conquer strategy?",
+    "answer": "Both break down problems into subproblems. Divide-and-Conquer solves independent subproblems (like Merge Sort). DP is used when subproblems overlap; it stores results of subproblems (memoization/tabulation) so they are only computed once."
+  },
+  {
+    "id": "challenge_008",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "question": "What is the fundamental difference between TCP and UDP protocols?",
+    "answer": "TCP is connection-oriented, utilizing handshakes to guarantee data packet delivery and sequential ordering. UDP is connectionless, throwing data quickly without verification, which makes it ideal for live streaming or gaming."
+  },
+  {
+    "id": "challenge_009",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "What is a Content Delivery Network (CDN) and how does it optimize web load speeds?",
+    "answer": "A CDN is a distributed network of proxy cache servers deployed globally. It caches static assets (images, HTML, JS) at edge servers closer to the user's geographic location, reducing server response latency and load."
+  },
+  {
+    "id": "challenge_010",
+    "topic": "Databases",
+    "difficulty": "Medium",
+    "question": "When would you choose a NoSQL database over a relational database (RDBMS)?",
+    "answer": "Choose NoSQL when data is unstructured or polymorphic, horizontal scaling is a core requirement, real-time read/write speeds take precedence over strict ACID compliance, and schema requirements change rapidly."
+  },
+  {
+    "id": "challenge_011",
+    "topic": "Software Engineering",
+    "difficulty": "Easy",
+    "question": "What is the difference between Git merge and Git rebase?",
+    "answer": "Git merge ties separate histories together with a new 'merge commit', preserving the exact chronological sequence. Git rebase rewrites project history by moving your feature branch commits to the tip of the target branch."
+  },
+  {
+    "id": "challenge_012",
+    "topic": "Algorithms",
+    "difficulty": "Easy",
+    "question": "What is the time complexity of a binary search, and what condition must the data satisfy before using it?",
+    "answer": "The time complexity is O(log n). The underlying array or data structure must be sorted in order for the binary split logic to function correctly."
+  },
+  {
+    "id": "challenge_013",
+    "topic": "Data Structures",
+    "difficulty": "Medium",
+    "question": "Explain the difference between a Deep Copy and a Shallow Copy of an object.",
+    "answer": "A shallow copy duplicates the top-level structure but references the same inner object memory blocks. A deep copy recursively duplicates every single nested reference object, creating a entirely independent instance clone."
+  },
+  {
+    "id": "challenge_014",
+    "topic": "Flutter & Dart",
+    "difficulty": "Hard",
+    "question": "Explain Dart's single-threaded nature and how Isolates work.",
+    "answer": "Dart runs on a single thread inside an event loop. To perform heavy calculations without blocking the UI, Dart uses 'Isolates'. They are separate worker processes that have their own memory heaps and communicate purely via ports."
+  },
+  {
+    "id": "challenge_015",
+    "topic": "Operating Systems",
+    "difficulty": "Medium",
+    "question": "What is a deadlock in operating systems, and what are the four conditions required for it to happen?",
+    "answer": "A deadlock is a state where processes freeze because each is waiting for a resource held by another. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait."
+  },
+  {
+    "id": "challenge_016",
+    "topic": "System Design",
+    "difficulty": "Medium",
+    "question": "What is the purpose of a Load Balancer in system architecture?",
+    "answer": "A load balancer distributes incoming user network traffic across multiple backend server instances. This prevents any single server from overloading, increases application availability, and ensures smooth scaling."
+  },
+  {
+    "id": "challenge_017",
+    "topic": "Databases",
+    "difficulty": "Medium",
+    "question": "What is database indexing and what is the trade-off of adding too many indexes?",
+    "answer": "Indexing creates data structures (like B-Trees) to look up rows rapidly. The trade-off is that while reads become fast, write operations (INSERT, UPDATE, DELETE) become slower because the system must update the index structures too."
+  },
+  {
+    "id": "challenge_018",
+    "topic": "Software Engineering",
+    "difficulty": "Medium",
+    "question": "Explain the single responsibility principle (SRP) in SOLID design principles.",
+    "answer": "SRP states that a class or module should have one, and only one, reason to change. This means a single class should perform exactly one core job, which makes code cleaner, less coupled, and easier to test."
+  },
+  {
+    "id": "challenge_019",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "question": "What happens when you type a URL into a browser and press enter?",
+    "answer": "The browser checks browser cache, resolves the domain IP address via DNS, establishes a TCP connection handshake, sends an HTTP request, receives the server response content, and renders the layout on screen."
+  },
+  {
+    "id": "challenge_020",
+    "topic": "Data Structures",
+    "difficulty": "Easy",
+    "question": "What is the difference between a Stack and a Queue?",
+    "answer": "A Stack uses Last-In-First-Out (LIFO) order, where elements are pushed and popped from the top. A Queue uses First-In-First-Out (FIFO) order, where elements enter at the back and exit from the front."
+  },
+  {
+    "id": "challenge_021",
+    "topic": "Algorithms",
+    "difficulty": "Medium",
+    "question": "What is the space complexity of a recursive function?",
+    "answer": "It is O(d), where 'd' is the maximum depth of the recursion tree. Each recursive call adds a frame block to the execution call stack memory until the base condition is reached."
+  },
+  {
+    "id": "challenge_022",
+    "topic": "System Design",
+    "difficulty": "Hard",
+    "question": "Explain the CAP Theorem and its real-world implications.",
+    "answer": "The CAP theorem states that a distributed system can only guarantee two out of three properties at once: Consistency, Availability, and Partition Tolerance. Since network partitions will happen, systems must choose between consistency or availability."
+  },
+  {
+    "id": "challenge_023",
+    "topic": "Databases",
+    "difficulty": "Easy",
+    "question": "What is the difference between an INNER JOIN and a LEFT JOIN in SQL?",
+    "answer": "INNER JOIN returns rows only when there is a match in both tables. LEFT JOIN returns all rows from the left table, along with matching rows from the right table (filling unmatched columns with NULL values)."
+  },
+  {
+    "id": "challenge_024",
+    "topic": "Flutter & Dart",
+    "difficulty": "Medium",
+    "question": "What are Factory constructors in Dart and when are they used?",
+"answer": "A factory constructor is a constructor that does not always create a fresh instance of its class. It is used to return existing cached instances, return a subtype instance subclass, or initialize log values before setup."},
+{"id": "challenge_025","topic": "Software Engineering","difficulty": "Easy","question": "What is the difference between unit testing and integration testing?","answer": "Unit testing verifies an isolated snippet of code (like a single method or function) using mock dependencies. Integration testing verifies that multiple sub-modules or systems interact and function together correctly."},
+{"id": "challenge_026","topic": "Data Structures","difficulty": "Medium","question": "What is the difference between a Binary Tree and a Binary Search Tree (BST)?","answer": "A binary tree is a node structure where each node has at most two children. A BST adds a rule: a node's left child must hold a smaller value, and its right child must hold a larger value."},{"id": "challenge_027","topic": "Algorithms","difficulty": "Medium","question": "What is the time complexity of Quick Sort in its best, average, and worst scenarios?","answer": "Best and average time complexity is O(n log n). Worst-case complexity is O(n²), which happens if the pivot selection picks the smallest or largest element on a sorted or reverse-sorted array."},
+{"id": "challenge_028","topic": "Computer Networks","difficulty": "Medium","question": "What is the difference between symmetric and asymmetric encryption?","answer": "Symmetric encryption uses one single secret key to both encrypt and decrypt data files. Asymmetric encryption uses a public key to encrypt data and a separate private key to decrypt it."},
+{"id": "challenge_029","topic": "System Design","difficulty": "Medium","question": "What is database sharding?","answer": "Sharding is a scaling technique that breaks a massive database down into smaller, faster data parts called shards. These shards are then distributed across different database server nodes."},{"id": "challenge_030","topic": "Databases","difficulty": "Hard","question": "What is database normalization, and why do we use it?","answer": "Normalization organizes database columns and tables to reduce data duplication and prevent anomalies. It splits messy columns into separate relational tables to ensure logical data dependencies."},{"id": "challenge_031","topic": "Software Engineering","difficulty": "Medium","question": "Explain the Open/Closed Principle in SOLID object-oriented design patterns.","answer": "It states that software modules should be open for extension but closed for modification. This means you should be able to add new application features without altering or breaking existing code."},{"id": "challenge_032","topic": "Algorithms","difficulty": "Easy","question": "What is a memory leak and how do you find it?","answer": "A memory leak happens when an application keeps references to unneeded objects, preventing the garbage collector from freeing that memory. It is diagnosed using memory profilers and heap allocation snapshots."},
+{"id": "challenge_033","topic": "Data Structures","difficulty": "Medium","question": "What is a circular queue, and what issue does it solve over a standard linear queue?","answer": "A circular queue connects the last position back to the first position. It solves the issue of wasted empty spaces in a linear queue where items are dequeued but the indexes cannot be reused."},
+{"id": "challenge_034","topic": "Flutter & Dart","difficulty": "Easy","question": "What is the difference between 'const' and 'final' keywords in Dart?","answer": "'const' makes a variable a compile-time constant, meaning its value must be known ahead of time. 'final' makes a variable run-time constant, meaning it can only be assigned once during runtime execution."},
+{"id": "challenge_035","topic": "Operating Systems","difficulty": "Medium","question": "What is the difference between a process and a thread?","answer": "A process is an isolated execution instance with its own allocated memory space. A thread is a lightweight execution sub-unit running inside a process that shares that process's memory space."},
+{"id": "challenge_036","topic": "System Design","difficulty": "Medium","question": "Explain the difference between polling and WebSockets for real-time app updates.","answer": "Polling makes repeated HTTP requests at set intervals to check for server data updates, which wastes bandwidth. WebSockets create a persistent, bi-directional connection pipe for instant data transfers."},
+{"id": "challenge_037","topic": "Databases","difficulty": "Medium","question": "What is a deadlock in a database and how does the engine resolve it?","answer": "A database deadlock happens when two transactions block each other by holding locks on data the other needs. The database engine resolves this by aborting one transaction and rolling back its changes."},{"id": "challenge_038","topic": "Software Engineering","difficulty": "Medium","question": "Explain the Liskov Substitution Principle (LSP) in SOLID design guidelines.","answer": "LSP states that any subclass or derived class must be completely interchangeable with its parent class without breaking the application logic or altering expected behaviors."},{"id": "challenge_039","topic": "Computer Networks","difficulty": "Easy","question": "What is the difference between HTTP and HTTPS?","answer": "HTTP transfers data as plaintext, which can be intercepted by attackers. HTTPS wraps data transfers inside a secure SSL/TLS encryption layer to keep communication private."},
+{"id": "challenge_040","topic": "Data Structures","difficulty": "Medium","question": "What is a graph data structure, and how do adjacency matrices and adjacency lists differ?","answer": "A graph maps node relationships using vertices and edges. An adjacency matrix uses a 2D array grid that takes O(v²) space memory. An adjacency list uses array link arrays that use less space."},{"id": "challenge_041","topic": "Algorithms","difficulty": "Medium","question": "What is the difference between Breadth-First Search (BFS) and Depth-First Search (DFS)?","answer": "BFS explores graph layers step-by-step using a Queue structure. DFS explores a branch to its deepest node first before backtracking, utilizing a Stack call loop framework."},{"id": "challenge_042","topic": "System Design","difficulty": "Hard","question": "What is microservices architecture and what are its main challenges?","answer": "Microservices break an application down into independent, loosely coupled services. The main challenges are maintaining data consistency across databases, network latency, and complex deployment debugging."},{"id": "challenge_043","topic": "Databases","difficulty": "Easy","question": "What is a primary key and how does it differ from a unique key constraint?","answer": "A primary key uniquely identifies a table row and cannot be null. A unique key constraint also ensures unique values across a column, but it allows one null value entry."},{"id": "challenge_044","topic": "Flutter & Dart","difficulty": "Medium","question": "What is the purpose of the 'InheritedWidget' in Flutter layout trees?","answer": "InheritedWidget passes state down the widget tree efficiently. It allows child widgets to look up and listen to data changes from an ancestor widget without manually passing constructors."},{"id": "challenge_045","topic": "Software Engineering","difficulty": "Medium","question": "Explain the Interface Segregation Principle (ISP) from SOLID guidelines.","answer": "ISP states that classes should not be forced to implement interfaces or methods they do not use. It is better to split large, bulky interfaces into smaller, specific ones."},{"id": "challenge_046","topic": "Data Structures","difficulty": "Medium","question": "What is a self-balancing binary search tree and why do we use it?","answer": "It is a tree (like an AVL or Red-Black tree) that adjusts its layout during insertions. This keeps the tree height balanced, preventing it from degenerating into a slow O(n) linear chain list."},{"id": "challenge_047","topic": "Algorithms","difficulty": "Easy","question": "What is the time complexity of Bubble Sort and why is it rarely used?","answer": "Bubble Sort has a time complexity of O(n²). It is rarely used in real-world apps because swapping adjacent elements repeatedly is highly inefficient compared to Quick Sort or Merge Sort."},{"id": "challenge_048","topic": "Computer Networks","difficulty": "Medium","question": "What are the common HTTP status code ranges and what do they mean?","answer": "1xx: Info requests. 2xx: Success actions (like 200 OK). 3xx: Route redirects. 4xx: Client-side errors (like 404 Not Found). 5xx: Server failures (like 500 Internal Error)."},{"id": "challenge_049","topic": "System Design","difficulty": "Medium","question": "What is a reverse proxy server and why do we deploy it?","answer": "A reverse proxy sits in front of web servers to route incoming client requests. It helps manage load balancing, handles SSL decryption, blocks attacks, and caches static data content."},{"id": "challenge_050","topic": "Databases","difficulty": "Medium","question": "What is data replication and what is the difference between synchronous and asynchronous replication?","answer": "Replication copies data across multiple servers. Synchronous replication writes data to all servers simultaneously before confirming success. Asynchronous replication updates backups afterward with a slight delay."},{"id": "challenge_051","topic": "Software Engineering","difficulty": "Medium","question": "Explain the Dependency Inversion Principle (DIP) in SOLID guidelines.","answer": "DIP states that high-level modules should not depend on low-level concrete modules; instead, both should depend on abstractions (interfaces). This keeps your software system decoupled."},{"id": "challenge_052","topic": "Algorithms","difficulty": "Medium","question": "What is the 'Sliding Window' pattern and when should you use it?","answer": "It runs a sub-array window over data arrays to avoid duplicate nested iterations. Use it for tracking contiguous element segments, like finding the longest substring without repeating characters."},{"id": "challenge_053","topic": "Data Structures","difficulty": "Medium","question": "What is a Min-Heap and Max-Heap, and what are their primary use cases?","answer": "A Min-Heap keeps the smallest element at the root node; a Max-Heap keeps the largest. They are used to implement Priority Queues and to perform efficient Heap Sorts."},{"id": "challenge_054","topic": "Flutter & Dart","difficulty": "Easy","question": "What is the difference between a StatefulWidget and a StatelessWidget?","answer": "StatelessWidget renders statically and cannot alter its appearance once built. StatefulWidget comes with a mutable State object that calls setState() to trigger a redrawing of the layout UI."},{"id": "challenge_055","topic": "Operating Systems","difficulty": "Medium","question": "What is thrashing in memory management configurations?","answer": "Thrashing happens when the OS spends more time swapping pages in and out of virtual memory than running actual process threads. This kills application performance."},{"id": "challenge_056","topic": "System Design","difficulty": "Hard","question": "What is horizontal database scaling and how does consistent hashing help?","answer": "It distributes data records across a cluster of server nodes. Consistent hashing ensures that when nodes are added or removed, only a small fraction of the database keys need to be remapped."},{"id": "challenge_057","topic": "Databases","difficulty": "Easy","question": "What are stored procedures and what are their benefits?","answer": "Stored procedures are precompiled SQL code statements saved directly on the database server. They protect against SQL injection, lower network latency, and keep code reusable."},{"id": "challenge_058","topic": "Software Engineering","difficulty": "Easy","question": "What is Continuous Integration and Continuous Deployment (CI/CD)?","answer": "CI automatically tests and merges code updates into a shared repository. CD automates the deployment of those verified code updates straight into production environments."},{"id": "challenge_059","topic": "Computer Networks","difficulty": "Medium","question": "What is the difference between a forward proxy and a reverse proxy?","answer": "A forward proxy hides the client by routing outgoing web requests to the internet. A reverse proxy protects backend servers by capturing incoming public user requests."},{"id": "challenge_060","topic": "Data Structures","difficulty": "Easy","question": "What is the difference between an Array and an ArrayList?","answer": "An Array has a fixed size allocated at creation. An ArrayList acts as a dynamic array that automatically creates larger memory allocations behind the scenes when it fills up."},{"id": "challenge_061","topic": "Algorithms","difficulty": "Medium","question": "Explain Merge Sort runtime speed and its memory space trade-off.","answer": "Merge Sort splits arrays down recursively, achieving a stable O(n log n) runtime. The trade-off is its O(n) space complexity, as it requires helper array buffers to merge items."},{"id": "challenge_062","topic": "System Design","difficulty": "Medium","question": "What is Cache Invalidation and what are the main strategies?","answer": "It removes stale data from the cache when the database changes. Main strategies: Write-Through (updates both at once), Write-Back (updates cache first), and Cache-Aside (app manages updates)."},{"id": "challenge_063","topic": "Databases","difficulty": "Medium","question": "What is a composite primary key in relational table mappings?","answer": "A composite key combines two or more database columns to form a unique identifier for a table row, used when a single column cannot guarantee unique rows."},{"id": "challenge_064","topic": "Flutter & Dart","difficulty": "Medium","question": "What is Sound Null Safety in Dart?","answer": "Sound Null Safety catches null errors during compilation instead of crashing at runtime. Variables are non-nullable by default unless explicitly marked with a question mark symbol."},{"id": "challenge_065","topic": "Software Engineering","difficulty": "Easy","question": "What is technical debt and how should developers manage it?","answer": "Technical debt is the future cost of choosing quick, messy code fixes now over clean, organized engineering architecture. It is managed by refactoring regularly during updates."},{"id": "challenge_066","topic": "Data Structures","difficulty": "Medium","question": "What is a Trie data structure, and what is its primary use case?","answer": "A Trie is an efficient search tree where child nodes share common character paths. It is used to implement auto-complete search inputs and spell-checker dictionary lookups."},{"id": "challenge_067","topic": "Algorithms","difficulty": "Easy","question": "What is Selection Sort and what is its time complexity?","answer": "Selection Sort scans an array to find the smallest item and swaps it into place. It has a slow O(n²) time complexity across all runtime scenarios."},{"id": "challenge_068","topic": "Computer Networks","difficulty": "Medium","question": "What is the purpose of the Domain Name System (DNS)?","answer": "DNS acts as the phonebook of the internet. It translates human-readable web domain paths (like google.com) into numerical IP addresses that computers use to route data packet streams."},{"id": "challenge_069","topic": "System Design","difficulty": "Hard","question": "What is the difference between SQL and NoSQL database scaling?","answer": "SQL databases scale vertically by adding raw compute power to a single master server node. NoSQL databases scale horizontally by sharding records across a cluster of server nodes."},{"id": "challenge_070","topic": "Databases","difficulty": "Easy","question": "What is a data warehouse and how does it differ from an operational database?","answer": "An operational database manages fast, daily read/write app transactions. A data warehouse aggregates historical data records from multiple sources to run slow, complex analytical business queries."},{"id": "challenge_071","topic": "Software Engineering","difficulty": "Medium","question": "What is the difference between abstract classes and interfaces?","answer": "An abstract class can hold concrete logic implementations and state variables. An interface is a blueprint layout constraint that only defines method signatures a class must implement."},{"id": "challenge_072","topic": "Algorithms","difficulty": "Medium","question": "Explain Insertion Sort and its best-case scenario runtime behavior.","answer": "Insertion sort builds a sorted array section item-by-item. Its average speed is O(n²), but its best-case runtime is O(n) if the target array is already sorted."},{"id": "challenge_073","topic": "Data Structures","difficulty": "Medium","question": "What is a disjoint-set (Union-Find) data structure and its common application?","answer": "It tracks elements split into non-overlapping subsets. It is used to detect cycles in a graph and to run Kruskal's algorithm for finding Minimum Spanning Trees."},{"id": "challenge_074","topic": "Flutter & Dart","difficulty": "Medium","question": "What is the difference between Future and Stream asynchronous models in Dart?","answer": "A Future returns a single asynchronous data response or error block after a delay. A Stream delivers an ongoing flow of multiple asynchronous data events over time."},{"id": "challenge_075","topic": "Operating Systems","difficulty": "Easy","question": "What is virtual memory and how does the OS use it?","answer": "Virtual memory uses a section of storage drive memory to act as extra RAM. The OS uses it to run large processes that exceed the phone's physical memory."},{"id": "challenge_076","topic": "System Design","difficulty": "Medium","question": "What is a database connection pool and why is it important?","answer": "A connection pool maintains a cache of active database connection channels. Reusing these open pipes avoids the performance overhead of opening and closing database sessions on every request."},{"id": "challenge_077","topic": "Databases","difficulty": "Medium","question": "What are database savepoints?","answer": "Savepoints split large database transactions into smaller checkpoints. They let you roll back specific changes to a set point without cancelling the entire transaction."},{"id": "challenge_078","topic": "Software Engineering","difficulty": "Easy","question": "What is the difference between object-oriented programming (OOP) and functional programming (FP)?","answer": "OOP organizes program logic around Objects containing internal state and methods. FP builds software around pure, independent function computations, avoiding mutable data states."},{"id": "challenge_079","topic": "Computer Networks","difficulty": "Easy","question": "What is an IP address and what is the difference between IPv4 and IPv6?","answer": "An IP address uniquely identifies a device on a network. IPv4 uses 32-bit addresses, which limits total device entries. IPv6 uses 128-bit addresses to support trillions of new devices."},{"id": "challenge_080","topic": "Data Structures","difficulty": "Medium","question": "What is an adjacency list graph mapping and how does it handle sparse datasets?","answer": "An adjacency list stores connections as a list of neighbors for each node. It handles sparse datasets efficiently because it only allocates memory for edges that actually exist."},{"id": "challenge_081","topic": "Algorithms","difficulty": "Medium","question": "What is the time complexity of Dijkstra's algorithm and what is its limitation?","answer": "Using a min-priority queue, its time complexity is O(E log V). Its primary limitation is that it cannot process graph edges with negative weights accurately."},{"id": "challenge_082","topic": "System Design","difficulty": "Medium","question": "What is Horizontal Pod Autoscaling (HPA) in container systems?","answer": "HPA automatically spins up or tears down container app clones in a cluster based on live tracking metrics like CPU usage or request traffic spikes."},{"id": "challenge_083","topic": "Databases","difficulty": "Easy","question": "What is the purpose of the GROUP BY statement in SQL queries?","answer": "GROUP BY clusters matching data rows together into summary rows. It is used alongside mathematical aggregate functions like COUNT(), SUM(), or AVG() to calculate group summaries."},{"id": "challenge_084","topic": "Flutter & Dart","difficulty": "Medium","question": "What are mixins in Dart and what are the rules for using them?","answer": "Mixins let you reuse a class's code in multiple hierarchies without inheriting from it. They are declared using the mixin keyword and applied to classes using the with keyword."},{"id": "challenge_085","topic": "Software Engineering","difficulty": "Medium","question": "Explain the difference between Agile and Waterfall product development cycles.","answer": "Waterfall follows a rigid, linear sequence where each phase must finish before the next begins. Agile uses short sprints to build, test, and release features incrementally based on feedback."},{"id": "challenge_086","topic": "Data Structures","difficulty": "Hard","question": "What is a segment tree data structure and when is it used?","answer": "A segment tree is a binary tree used to store intervals or segments. It allows querying array ranges and updating values efficiently in O(log n) time."},{"id": "challenge_087","topic": "Algorithms","difficulty": "Easy","question": "What is Linear Search and when is it the only search option?","answer": "Linear search checks every item sequentially from start to finish. It has a time complexity of O(n) and is the only option when the dataset is completely unsorted."},{"id": "challenge_088","topic": "Computer Networks","difficulty": "Medium","question": "What is a subnet mask and what does it do?","answer": "A subnet mask splits an IP address into two parts: one that identifies the network and one that identifies the host device within that network."},{"id": "challenge_089","topic": "System Design","difficulty": "Medium","question": "What is rate limiting and what are the common algorithmic approaches?","answer": "Rate limiting caps the number of requests a user can make to an API. Common approaches include the Token Bucket, Leaky Bucket, and Fixed Window Counter algorithms."},{"id": "challenge_090","topic": "Databases","difficulty": "Medium","question": "What is the difference between pessimistic and optimistic concurrency control locking in databases?","answer": "Pessimistic locking locks data rows immediately when reading to prevent edits. Optimistic locking allows shared reading and only checks for conflicts right when saving data commits."},{"id": "challenge_091","topic": "Software Engineering","difficulty": "Easy","question": "What is regression testing and why is it important?","answer": "Regression testing re-runs existing test suites after code changes. It ensures that adding a new feature hasn't broken or introduced bugs into working parts of the app."},{"id": "challenge_092","topic": "Algorithms","difficulty": "Medium","question": "Explain the quickselect selection framework and its average runtime performance.","answer": "Quickselect finds the 'k-th' smallest item in an unsorted list without sorting the whole thing. It uses partitioning logic to achieve a fast average time complexity of O(n)."},{"id": "challenge_093","topic": "Data Structures","difficulty": "Medium","question": "What is a B-Tree and why are they preferred for storage engine layouts over AVL trees?","answer": "B-Trees are self-balancing search trees optimized for reading and writing large blocks of data. They have a high branching factor, which lowers disk read operations compared to binary trees."},{"id": "challenge_094","topic": "Flutter & Dart","difficulty": "Hard","question": "What is the difference between the Widget, Element, and RenderObject trees in Flutter?","answer": "The Widget tree defines the structural configuration. The Element tree manages the lifecycle and links widgets to underlying configurations. The RenderObject tree handles layout sizing and painting on screen."},{"id": "challenge_095","topic": "Operating Systems","difficulty": "Medium","question": "What is page fault routing in operating systems?","answer": "A page fault happens when a process tries to access data mapped in virtual memory that isn't loaded in physical RAM. The OS intercepts this and loads the data from disk storage."},{"id": "challenge_096","topic": "System Design","difficulty": "Hard","question": "What is event sourcing architecture?","answer": "Event sourcing stores all changes to an application's state as a sequence of events. Instead of saving just the final state, you can replay the event log to reconstruct the state at any point."},
+{"id": "challenge_097","topic": "Databases","difficulty": "Easy","question": "What is a database schema?","answer": "A schema is the blueprint layout configuration of a database. It defines the tables, columns, constraints, views, and structural relationships that organize data."},
+{"id": "challenge_098","topic": "Software Engineering","difficulty": "Easy","question": "What is test-driven development (TDD)?","answer": "TDD is a development process where you write automated tests for a feature before writing the actual code. You write the test, watch it fail, write code to make it pass, and then clean up the code."},
+{"id": "challenge_099","topic": "Computer Networks","difficulty": "Medium","question": "What is an asymmetric cryptography handshake and how does it protect authorization lines?","answer": "It uses a public key to encrypt a temporary symmetric master key during a handshake. Only the target server can decrypt this with its private key, keeping the channel secure."},
+{"id": "challenge_100","topic": "Data Structures","difficulty": "Hard","question": "What is a Bloom Filter and what are its trade-offs?","answer": "A Bloom Filter is a fast, space-efficient data structure used to check if an item is a member of a set. Trade-off: it can return false positives, but it never returns false negatives."},
+  {
+    "id": "challenge_101",
+    "topic": "Android",
+    "difficulty": "Medium",
+    "question": "What is the purpose of LifecycleOwner in Android Jetpack architecture components?",
+    "answer": "It is an interface indicating that a class has an Android Lifecycle. It allows components like LiveData or custom observers to monitor state changes (Started, Resumed) automatically, eliminating memory leaks and crashes related to destroyed Activities."
+  },
+  {
+    "id": "challenge_102",
+    "topic": "Java",
+    "difficulty": "Medium",
+    "question": "What is the structural difference between final, finally, and finalize keywords in Java?",
+    "answer": "'final' makes a class un-inheritable, a method un-overridable, or a variable un-assignable. 'finally' is an exception-handling block that always executes. 'finalize' is a method called by the Garbage Collector right before an object is removed from memory."
+  },
+  {
+    "id": "challenge_103",
+    "topic": "Python",
+    "difficulty": "Easy",
+    "question": "What is the difference between list append() and extend() methods in Python?",
+    "answer": "append() adds its argument as a single element to the end of the list (even if it is a sublist). extend() iterates over its argument sequence, adding each individual item to the list, expanding its linear size."
+  },
+  {
+    "id": "challenge_104",
+    "topic": "AI/ML",
+    "difficulty": "Medium",
+    "question": "What is overfitting in Machine Learning models, and how do you prevent it?",
+    "answer": "Overfitting happens when a model learns training data noise too well, failing to generalize to unseen test inputs. It is prevented by using regularization (L1/L2), reducing features, adding dropout layers, or increasing dataset samples."
+  },
+  {
+    "id": "challenge_105",
+    "topic": "Aptitude",
+    "difficulty": "Easy",
+    "question": "A train passes a station platform 100 meters long in 10 seconds, running at a uniform speed of 72 km/h. What is the length of the train?",
+    "answer": "72 km/h converted to meters/second is 72 * (5/18) = 20 m/s. Total distance crossed in 10 seconds = 20 * 10 = 200 meters. Length of the train = Total Distance - Platform Length = 200 - 100 = 100 meters."
+  },
+  {
+    "id": "challenge_106",
+    "topic": "HR",
+    "difficulty": "Easy",
+    "question": "How should you structure an answer using the STAR methodology for behavioral interview questions?",
+    "answer": "STAR stands for Situation (set the scene), Task (describe your responsibility), Action (explain your exact steps taken), and Result (highlight the positive quantitative outcome of your efforts)."
+  },
+  {
+    "id": "challenge_107",
+    "topic": "Android",
+    "difficulty": "Hard",
+    "question": "What are Android Launch Modes and how do Standard, SingleTop, SingleTask, and SingleInstance differ?",
+    "answer": "They manage how Activities are pushed onto the Task stack. Standard spawns a new instance every time. SingleTop reuses it if it's already on top. SingleTask creates a root instance in a new task. SingleInstance runs isolated alone inside its own task."
+  },
+  {
+    "id": "challenge_108",
+    "topic": "Java",
+    "difficulty": "Medium",
+    "question": "Why are String objects immutable in Java programming architectures?",
+    "answer": "Immutability allows String sharing in the String Pool, reducing heap memory usage. It ensures thread safety across concurrent operations and secures database logins or file paths from unexpected modification."
+  },
+  {
+    "id": "challenge_109",
+    "topic": "Python",
+    "difficulty": "Medium",
+    "question": "Explain the difference between deepcopy and shallow copy behaviors inside Python dictionary contexts.",
+    "answer": "A shallow copy (copy()) clones the top dictionary container dictionary, but inner sublists or references point to original memory IDs. deepcopy() creates a recursive clone of all objects down the nested tree."
+  },
+  {
+    "id": "challenge_110",
+    "topic": "AI/ML",
+    "difficulty": "Hard",
+    "question": "What is the difference between supervised, unsupervised, and reinforcement machine learning approaches?",
+    "answer": "Supervised learning trains models on labeled historical input-output pairs. Unsupervised maps unlabeled data patterns via clustering algorithms. Reinforcement learning trains agents to maximize numerical rewards through trial-and-error environmental feedback loops."
+  },
+  {
+    "id": "challenge_111",
+    "topic": "CN",
+    "difficulty": "Easy",
+    "question": "What is the difference between asymmetric and symmetric network cryptography routing paths?",
+    "answer": "Symmetric relies on one single secret key shared privately by both parties to encrypt and decrypt packets. Asymmetric establishes a public key to encrypt traffic and a unique private key kept hidden to decrypt data safely."
+  },
+  {
+    "id": "challenge_112",
+    "topic": "OS",
+    "difficulty": "Medium",
+    "question": "What is context switching inside operating system kernels and why is it considered expensive?",
+    "answer": "It is the process of storing the current CPU register CPU execution state of a thread so another process can load and execute. It is expensive because it consumes CPU cycles invalidating cache memory lines."
+  },
+  {
+    "id": "challenge_113",
+    "topic": "Flutter",
+    "difficulty": "Hard",
+    "question": "What is the difference between the widget tree, element tree, and render object tree in Flutter layouts?",
+    "answer": "Widget tree handles configurations data frameworks. Element tree manages structural lifecycle coordinates matching widgets to their render targets. RenderObject tree performs layout sizing calculations and paints UI pixels onto the device screen."
+  },
+  {
+    "id": "challenge_114",
+    "topic": "Aptitude",
+    "difficulty": "Medium",
+    "question": "If 5 machines take 5 minutes to print 5 books, how long will it take 100 machines to print 100 books?",
+    "answer": "It takes 5 minutes. If 5 machines make 5 books in 5 minutes, it means each machine prints exactly 1 book every 5 minutes independently. Therefore, 100 machines working together can print 100 books in those same 5 minutes."
+  },
+  {
+    "id": "challenge_115",
+    "topic": "HR",
+    "difficulty": "Medium",
+    "question": "What is the best way to answer the interview prompt: 'What is your greatest weakness?'",
+    "answer": "Pick a real but non-essential technical skill or professional behavior you struggled with, explain your self-awareness of it, and highlight the exact steps you are currently taking to improve (e.g., enrolling in software architecture courses)."
+  },
+  {
+    "id": "challenge_116",
+    "topic": "Android",
+    "difficulty": "Medium",
+    "question": "What is the difference between a Service and an IntentService in legacy Android configurations?",
+    "answer": "A Service runs directly on your Activity's main UI background main thread, meaning block risks persist. IntentService spawns its own single background thread automatically, processing incoming Intents sequentially before destroying itself."
+  },
+  {
+    "id": "challenge_117",
+    "topic": "Java",
+    "difficulty": "Easy",
+    "question": "What is the difference between abstract classes and interfaces in Java 8?",
+    "answer": "Abstract classes support state instance instance variable fields and partial constructors. Interfaces represent pure functional blueprints, allowing multiple inheritance constraints while supporting default implementation methods since Java 8."
+  },
+  {
+    "id": "challenge_118",
+    "topic": "Python",
+    "difficulty": "Medium",
+    "question": "What are *args and **kwargs parameter descriptors inside Python function syntax definitions?",
+    "answer": "*args allows passing a variable number of positional arguments as a tuple into functions. **kwargs accepts a variable list of keyword-mapped key-value arguments as a dictionary."
+  },
+  {
+    "id": "challenge_119",
+    "topic": "AI/ML",
+    "difficulty": "Medium",
+    "question": "What are precision and recall metrics, and how do they differ?",
+    "answer": "Precision tracks true positives out of all predicted positive items. Recall tracks true positives out of all actual positive samples available. They balance error trade-offs in classifications metrics."
+  },
+  {
+    "id": "challenge_120",
+    "topic": "Database",
+    "difficulty": "Easy",
+    "question": "What is the structural difference between primary keys and unique constraints in table definitions?",
+    "answer": "A Primary Key uniquely identifies a record row and completely forbids Null entries. A Unique Key constraint ensures column data uniqueness across rows but permits a single Null entry value."
+  }
+
+
+]
