@@ -1,16 +1,28 @@
 # mind_boost
 
-A new Flutter project.
+## ✨ Features
 
-## Getting Started
+- 🤖 AI-generated interview revision cards
+- 📖 2–3 minute daily learning content
+- 🔔 Smart reminder scheduling
+- 📝 Offline notes using Hive
+- 💾 Local caching for generated content
+- 🎯 Multiple interview domains
+- 📈 Daily streaks and progress tracking
+- 🎨 Modern Material 3 UI with smooth animations
+- 🌙 Light/Dark theme support (planned)
+  
+## 🛠 Tech Stack
 
-This project is a starting point for a Flutter application.
+- Flutter
+- Dart
+- Riverpod
+- Hive
+- OpenAI API
+- flutter_local_notifications
+- Material 3
+- Lottie Animations
+  
+## 🎯 Project Goal
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Preparing for technical interviews can feel overwhelming when studying long articles or watching lengthy videos. PrepNest AI helps students stay consistent by delivering concise AI-generated revision cards that take only 2–3 minutes to read. Combined with customizable reminders, offline note-taking, and progress tracking, the app encourages daily learning habits and makes interview preparation more manageable.
