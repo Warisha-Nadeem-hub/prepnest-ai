@@ -1,4 +1,4 @@
-# mind_boost
+# PrepNest AI
 
 ## ✨ Features
 
